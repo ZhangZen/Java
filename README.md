@@ -1,1 +1,1 @@
-# J
+# Java standard edition tutorial
