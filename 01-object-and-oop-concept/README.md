@@ -7,9 +7,9 @@
 but the abstract things we can not consider as object such as emotion, anger, funny, happy, ... 
 For example, table, chair, computer, ... are objects.
 
-- A collection of object having same one or more properties/behaviours is called `Class`.
+- A collection of object having same one or more characteristics/behaviours is called `Class`.
 For instance, class `Student` is a class standing for any student in our program; 
-as the `Student.java` file in my code, they will have some properties such as `id`, `name`, `className`, ...
+as the `Student.java` file in source code, they will have some properties such as `id`, `name`, `className`, ...
 
 ```java
 package com.github.truongbb;
