@@ -74,6 +74,26 @@ Because when we invoke method `increaseIdStudent()` and inject `s1` into this me
 That means the new object (we named it is `temp`) having type Student is created and points to the memory space 
 which is pointed to by s1. And of course, basing on the `1.1` part, we change `id` property of that memory space, so `s1.id` value is changed.
 
+<br/>
+So that, come back with trouble in code:
+
+```java
+// ok
+for (int i = 0; i < studentNumber; i++) {
+  students[i] = new Student();
+  students[i].enterData();
+}
+
+// not ok , error
+for (Student student : students) {
+  student = new Student();
+  student.enterData();
+}
+```
+
+The for-each loop use only one object `student` to go from beginning to the end of array, it's not separated objects like for-i loop.
+So the memory address of `student` object in for-each loop is the same from start to end array, in for-i loop use different memory space simultaneously with increasing `i`. 
+
 ## 2. `this` keyword
 
 After we know about `pointer` in java, we will know how to use `this` keyword.
