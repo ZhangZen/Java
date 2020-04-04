@@ -1,15 +1,15 @@
 # Object and OOP concept
 
-##1. `Object` and `Class`
+## 1. `Object` and `Class`
 
-###1.1 Definitions
+### 1.1 Definitions
 - `Object` is anything around us, 
 but the abstract things we can not consider as object such as emotion, anger, funny, happy, ... 
 For example, table, chair, computer, ... are objects.
 
-- A collection of object having same one or more properties/behaviours is called `Class`.
+- A collection of object having same one or more characteristics/behaviours is called `Class`.
 For instance, class `Student` is a class standing for any student in our program; 
-as the `Student.java` file in my code, they will have some properties such as `id`, `name`, `className`, ...
+as the `Student.java` file in source code, they will have some properties such as `id`, `name`, `className`, ...
 
 ```java
 package com.github.truongbb;
@@ -29,7 +29,7 @@ public class Student {
 
 Another example is class `person` is a class standing for any person, it has `id`, `name`, `maritalStatus`, ...
 
-###1.2 Code explanation
+### 1.2 Code explanation
 
 - Declare variables/properties:
 
@@ -78,14 +78,14 @@ For instance, in `Student` class we have method `showInfo` as above.
 `main method` must be `public static void main(String[] args){/*content here*/}`. Each class just has only one main method and in project we can have many main methods.
 If that, when we run project, we must choose a `main class` containing `main method` to run a program. 
 
-###1.3 Input and output with console in Java
+### 1.3 Input and output with console in Java
 
-####1.3.1 Input console methods
+#### 1.3.1 Input console methods
 
 We use `System.out.println(<your content goes here>)` to write down everything what you want to console.
 Your content can be a `string`, a `number` (integer, float, double, ...) or even an object.
 
-####1.3.2 Output console methods
+#### 1.3.2 Output console methods
 
 In first you getting with Java, the recommended input methods you should use is `Scanner`. Here is the usage:
 ```java
@@ -102,7 +102,7 @@ float  yourInputInteger = scanner.nextFloat(); // you type float value
 ```
 So, what'll happen when you type wrong format with your using method, for example, use `scanner.nextInt()` but you enter `abc`?
 
-==> An exception will be thrown and this is discuss later.   
+==> An exception will be thrown and this will be discussed later.   
 
 
 # 2. Object oriented programming (OOP)
@@ -118,3 +118,22 @@ And this section just has a note: `you do your job and I'll do mine`.
 That means the `showInfo` of `student` cannot write in `Person` class, or the `wingColor` property cannot write in `Cow` class.
 Each class stands for a set of objects having same characteristics and behaviours, so we should organize the properties and methods
 to make it clear and correct.
+
+# 3. JVM, JRE, JDK & `write one run anywhere` in java
+
+In some programming languages like C, C++, when we complete code we get an `.c` or `.cpp` file. 
+After that, an compiler will compile the our code file into binary file which will be suitable with our OS.
+For example, in Windows, executable file is `.exe` file, in MacOS and Linux is `.sh` file. So depending on your OS,
+the compiler will compile your code into  certain file type and it can not run in other OSs.
+
+But in java, the different process is performed when compiling. The compiler will not compile directly java code into binary file,
+code will be complied into **`bytecode/class``** file instead. And if any computer want to run our program, their computer should install Java virtual machine (JVM)
+which is in Java runtime environment (JRE).
+
+The Java development kit (JDK) is a kit containing JVM/JRE.
+
+So, in conclusion:
+
+- **Java virtual machine (JMV)** is an engine to run Java program, it is inside **Java runtime environment (JRE)**
+- **Java development kit (JDK)** is a development tool to compile java code into bytecode/class and Jdk contains JVM/JRE.
+So Jdk is used by Java developer/programmer.
