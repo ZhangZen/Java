@@ -102,7 +102,7 @@ float  yourInputInteger = scanner.nextFloat(); // you type float value
 ```
 So, what'll happen when you type wrong format with your using method, for example, use `scanner.nextInt()` but you enter `abc`?
 
-==> An exception will be thrown and this is discuss later.   
+==> An exception will be thrown and this will be discussed later.   
 
 
 # 2. Object oriented programming (OOP)
