@@ -256,3 +256,7 @@ public static void main(String[] args) {
   foo(13, 21);
 }
 ```
+
+## Note
+- Recommended: using `private` properties in each class (ensure the encapsulation in OOP, discuss later)
+- Recommended: every properties should have access modifier (except default) 
