@@ -1,8 +1,8 @@
 # Object and OOP concept
 
-##1. `Object` and `Class`
+## 1. `Object` and `Class`
 
-###1.1 Definitions
+### 1.1 Definitions
 - `Object` is anything around us, 
 but the abstract things we can not consider as object such as emotion, anger, funny, happy, ... 
 For example, table, chair, computer, ... are objects.
@@ -29,7 +29,7 @@ public class Student {
 
 Another example is class `person` is a class standing for any person, it has `id`, `name`, `maritalStatus`, ...
 
-###1.2 Code explanation
+### 1.2 Code explanation
 
 - Declare variables/properties:
 
@@ -78,14 +78,14 @@ For instance, in `Student` class we have method `showInfo` as above.
 `main method` must be `public static void main(String[] args){/*content here*/}`. Each class just has only one main method and in project we can have many main methods.
 If that, when we run project, we must choose a `main class` containing `main method` to run a program. 
 
-###1.3 Input and output with console in Java
+### 1.3 Input and output with console in Java
 
-####1.3.1 Input console methods
+#### 1.3.1 Input console methods
 
 We use `System.out.println(<your content goes here>)` to write down everything what you want to console.
 Your content can be a `string`, a `number` (integer, float, double, ...) or even an object.
 
-####1.3.2 Output console methods
+#### 1.3.2 Output console methods
 
 In first you getting with Java, the recommended input methods you should use is `Scanner`. Here is the usage:
 ```java
