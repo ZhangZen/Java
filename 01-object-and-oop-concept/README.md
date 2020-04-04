@@ -118,3 +118,22 @@ And this section just has a note: `you do your job and I'll do mine`.
 That means the `showInfo` of `student` cannot write in `Person` class, or the `wingColor` property cannot write in `Cow` class.
 Each class stands for a set of objects having same characteristics and behaviours, so we should organize the properties and methods
 to make it clear and correct.
+
+# 3. JVM, JRE, JDK & `write one run anywhere` in java
+
+In some programming languages like C, C++, when we complete code we get an `.c` or `.cpp` file. 
+After that, an compiler will compile the our code file into binary file which will be suitable with our OS.
+For example, in Windows, executable file is `.exe` file, in MacOS and Linux is `.sh` file. So depending on your OS,
+the compiler will compile your code into  certain file type and it can not run in other OSs.
+
+But in java, the different process is performed when compiling. The compiler will not compile directly java code into binary file,
+code will be complied into **`bytecode/class``** file instead. And if any computer want to run our program, their computer should install Java virtual machine (JVM)
+which is in Java runtime environment (JRE).
+
+The Java development kit (JDK) is a kit containing JVM/JRE.
+
+So, in conclusion:
+
+- **Java virtual machine (JMV)** is an engine to run Java program, it is inside **Java runtime environment (JRE)**
+- **Java development kit (JDK)** is a development tool to compile java code into bytecode/class and Jdk contains JVM/JRE.
+So Jdk is used by Java developer/programmer.
