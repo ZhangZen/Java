@@ -171,7 +171,7 @@ The constant in java is usually defined using `public static final` like this: `
 
 - Before methods: The `static method` just allow `static` variables inside and is used by another `static method`
 
-- Before code blocks: The `static code block` in a class is invoked ONLY ONCE when we initiate new object
+- Before code blocks: The `static code block` in a class is invoked **ONLY ONCE** when we initiate new object
 
 ```java
 public class Student {

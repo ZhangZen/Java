@@ -27,7 +27,7 @@ public class Student {
 }
 ```
 
-Another example is class `person` is a class standing for any person, it has `id`, `name`, `maritalStatus`, ...
+Another example is class `Person` is a class standing for any person, it has `id`, `name`, `maritalStatus`, ...
 
 ### 1.2 Code explanation
 
@@ -44,7 +44,7 @@ The same with `String name;` that I have a variable named `name` having `String`
   - Primitives: `boolean`, `byte`, `char`, `short`, `int`, `long`, `float`, `double`.
   - Object: `Boolean`, `Byte`, `Char`, `String`, `Short`, `Integer`, `Long`, `Float`, `Double`, .... or any other Objects (maybe discuss later).
 
-More details about java primitive data type:
+More details about java primitive data types:
 
 
 | Data Type | Size | Description |
@@ -58,7 +58,7 @@ More details about java primitive data type:
 | boolean | 1 bit | Stores `true` or `false` values
 | char | 2 bytes  |Stores a `single character/letter` or `ASCII values`
 
-- Packages, Class, Properties, Methods:
+- Packages, Classes, Properties, Methods:
 
 `package` is just a folder contains `.java` files. A `.java` file should be in a certain package and a `class` should have package they belong to.
 <br>
@@ -67,16 +67,16 @@ More details about java primitive data type:
 Note that in a `.java` file just has only one `public class`.
 <br>
 <br>
-`properties` is talked above.
+`property` is talked above.
 <br>
 <br>
 `method` is function to do an action we want in class, and it brings common characteristics of that class.
-For instance, in `Student` class we have method `showInfo` as above.
+For instance, in `Student` class we have method `showInfo()` as above.
 
 - `main method`, `main class`:
 
 `main method` must be `public static void main(String[] args){/*content here*/}`. Each class just has only one main method and in project we can have many main methods.
-If that, when we run project, we must choose a `main class` containing `main method` to run a program. 
+If so, when we run project, we must choose a `main class` containing `main method` to run a program. 
 
 ### 1.3 Input and output with console in Java
 
@@ -110,12 +110,12 @@ So, what'll happen when you type wrong format with your using method, for exampl
 In this section we don't go deeply to talk about OOP including `encapsulation`, `inheritance`, `polymorphism`,`abstraction`;
 we're just talking about some basic concepts, simple ideas.
 
-OOP is programming about objects; we define, manage, use objects. And all these actions is following objects.
+OOP is programming about objects; we define, manage, use objects. And all these actions is **following objects**.
 We create class to collect objects, we declare properties and methods to describe characteristics and behaviours of objects/class.
 
 And this section just has a note: `you do your job and I'll do mine`.
 
-That means the `showInfo` of `student` cannot write in `Person` class, or the `wingColor` property cannot write in `Cow` class.
+That means the `showInfo()` of `Student` cannot write in `Person` class, or the `wingColor` property cannot write in `Cow` class.
 Each class stands for a set of objects having same characteristics and behaviours, so we should organize the properties and methods
 to make it clear and correct.
 
@@ -127,7 +127,7 @@ For example, in Windows, executable file is `.exe` file, in MacOS and Linux is `
 the compiler will compile your code into  certain file type and it can not run in other OSs.
 
 But in java, the different process is performed when compiling. The compiler will not compile directly java code into binary file,
-code will be complied into **`bytecode/class``** file instead. And if any computer want to run our program, their computer should install Java virtual machine (JVM)
+code will be complied into **`bytecode/class`** file instead. And if any computer want to run our program, their computer should install Java virtual machine (JVM)
 which is in Java runtime environment (JRE).
 
 The Java development kit (JDK) is a kit containing JVM/JRE.

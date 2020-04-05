@@ -11,7 +11,7 @@
 In last lesson, we've talked about data types: primitive and object types. 
 **In java, except primitive types, every object is a pointer.**
 
-The mechanism here is when you creat an object, system takes a memory space for that object, 
+The mechanism here is when you create an object, system takes a memory space for that object, 
 and declared object **points to** that memory space. For instance, `Student s = new Student();`,
 the `s` object having `Student` type is **pointing to** an area in memory belongs to it.
 And when we do any action with this object like change property values or assign to the new object, ... that means we are doing in this object's memory space.
@@ -70,9 +70,9 @@ increaseIdStudent(s1); // temp object is created
 System.out.print("s1.id: " + s1.id); // it now is 2
 ```
 
-Because when we invoke method `increaseIdStudent()` and inject `s1` into this method, Java will pass the s1 reference by value.
+Because when we invoke method `increaseIdStudent()` and inject `s1` into this method, Java will pass the `s1` reference by value.
 That means the new object (we named it is `temp`) having type Student is created and points to the memory space 
-which is pointed to by s1. And of course, basing on the `1.1` part, we change `id` property of that memory space, so `s1.id` value is changed.
+which is pointed to by `s1`. And of course, basing on the `1.1` part, we change `id` property of that memory space, so `s1.id` value is changed.
 
 <br/>
 So that, come back with trouble in code:
@@ -91,8 +91,8 @@ for (Student student : students) {
 }
 ```
 
-The for-each loop use only one object `student` to go from beginning to the end of array, it's not separated objects like for-i loop.
-So the memory address of `student` object in for-each loop is the same from start to end array, in for-i loop use different memory space simultaneously with increasing `i`. 
+The `for-each` loop use only one object `student` to go from beginning to the end of array, it's not separated objects like `for-i` loop.
+So the memory address of `student` object in `for-each` loop is the same from start to end array, in `for-i` loop use different memory space simultaneously with increasing `i`. 
 
 ## 2. `this` keyword
 
